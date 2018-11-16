@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link type="image/x-icon" rel="shorcut icon" href="img-geek/icon.gif">
+  <title>Контакты - Шарoвня</title>
+</head>
+<body>
+  <div class="header">
+    <ul class="menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="Catalog/catalog.html">Каталог</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <img src="img-geek/logo.gif" alt="logo">
+    <h1>Шарoвня</h1>
+  </div>
+  <table class="contacts">
+    <tr>
+      <th colspan="5" id="first">Контакты</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Уважаемые покупатели!<br>Вы всегда сможете связаться с нами:</th>
+      <td>По электронной почте:</td>
+      <td>Позвонить нам по номеру:</td>
+      <td colspan="2">Заполнить форму обратной связи</td>
+    </tr>
+    <tr>
+      <td>sales@sharovnya.ru</td>
+      <td>+7 (985) 000 – 00 – 00</td>
+      <td rowspan="3" colspan="2">
+        <form action="#">
+          <input type="text" placeholder="Ваше имя"><br>
+          <input type="email" placeholder="Ваш E-mail"><br> <!--атрибут required можно вставить дополнительно
+          чтобы не допустить пустого поля адреса (в случае, если есть наименование поля ввода, которое будет со звездочкой
+          как обязательное поле ввода)-->
+          <input type="text" placeholder="Ваш номер телефона"><br>
+          <textarea name="Сообщение" rows="6" cols="40" placeholder="Сообщение"></textarea><br>
+          <input type="submit" value="Отправить"> <input type="reset" value="Отменить">
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <th rowspan="2">Адреса наших магазинов:</th>
+      <td>"Веселая затея"</td>
+      <td>"Пати-бум"</td>
+    </tr>
+    <tr>
+      <td>Каширское шоссе, д.61 к.2</td>
+      <td>Профсоюзная ул., 129А</td>
+      </tr>
+  </table>
+  <div class="center special">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad1e86588216b785ead436506df6a3c99421f790d11b1ff5d7d3bf2ed1918ef84&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+  </div>
+  <div class="footer">
+    <h5>&#169; Все права защищены</h5>
+  </div>
+</body>
+</html>

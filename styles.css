@@ -1,0 +1,239 @@
+body {
+  background-color: #f8f8f8;
+}
+
+iframe {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 91%;
+  height: 374px;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 3px;
+  margin: 1px;
+}
+
+ol {
+  padding: 0px 15px;
+}
+
+.img, figure {
+  background-color: rgb(145, 214, 211);
+  width: 185px;
+  padding: 10px;
+  margin: 3px;
+  text-align: center;
+}
+
+.img:hover, figure:hover {
+  background-color: #f8f8f8;
+}
+
+.description li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 16px;
+  background: url(img-geek/Blue1.png) no-repeat left bottom;
+  padding: 0px 25px;
+}
+
+.menu {
+  float: right;
+  margin-top: 10px;
+}
+
+.menu li {
+  display: inline;
+}
+.menu li a {
+  margin: 0 14px; /*резервируем место под картинку, которая появится при наведении мыши*/
+}
+.menu li a:hover {
+  color: rgb(170, 68, 68);
+  margin-left: 0px; /*при наведении отменяем резерв, на которое помещается картинка. Таким образом пункты меню
+  не смещаются при появлении картинки*/
+}
+
+.menu li a:hover:before {
+  content: url(img-geek/Blue1.png);
+}
+
+.center {
+  text-align: center;
+}
+
+.special {
+  background:rgb(145, 214, 211) url(img-geek/background.gif) no-repeat top left;
+  border: white 1px dashed;
+  line-height: 1.3em;
+  padding: 10px;
+  margin: 1.5em 0px;
+}
+
+.special h3 {
+  background-color: transparent; /*прозрачный фон*/
+}
+
+.short {
+  color: #707070;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 16px;
+}
+
+.short:first-letter, .long:first-letter {
+  color: cornflowerblue;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.long {
+  color: #484343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;/*раздвигаетэл-ты между собой*/
+}
+
+.contacts {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  width: 100%;
+  margin: 1.5em 0px;
+}
+
+.contacts td {
+  background-color: #f8f8f8;
+  height: 4.5em;
+}
+
+.contacts th {
+  background-color: rgb(145, 214, 211);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto; /*центрирование блока*/
+  /*border: black 1px dashed;*/
+  position: relative;
+}
+
+.header {
+  border-bottom: solid 1px;
+  margin-bottom: 1.5em;
+  background-color: rgb(250, 216, 171);
+  height: 80px;
+  margin-bottom: 0px;
+}
+
+.footer {
+  border-top: solid 1px;
+  margin-top: 1.5em;
+  height: 80px;
+  background-color: burlywood;
+}
+
+#first  {
+  background:rgb(145, 214, 211) url(img-geek/background.gif) no-repeat top left;
+  height: 70px;
+}
+
+a {
+  color: rgb(4, 148, 4);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+h1 {
+  display: inline;
+  position: relative;
+  bottom: 15px;
+  left: 20px;
+}
+
+#glavnaya {
+  margin-left: 70px;
+}
+
+h3 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eaeaea;
+}
+
+textarea, form > input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-transform: capitalize; /*При вводе текста в поля, каждое слово будет начинаться с большой буквы,
+  даже если пользователь будет вводить с маленькой */
+  resize: none; /*запрещает растягивать поле textarea*/
+}
+
+form > input {
+  height: 25px;
+  width: 200px;
+}
+
+input[type=email]:focus {
+  color: black;
+  background-color: rgb(145, 214, 211);
+}
+
+input[type=email] {
+  text-transform: none;
+}
+
+input[type=text]:focus, textarea:focus {
+  color: black;
+  background-color: rgb(69, 245, 69);
+}
+
+input[type=submit], input[type=reset] { /*Обращение к атрибутам эл-та input*/
+  height: 25px;
+  width: 90px;
+}
+
+/*цвет текста в полях ввода для браузеров*/
+input, input::-webkit-input-placeholder,
+textarea, textarea::-webkit-input-placeholder {
+  color: rgb(11, 121, 11);
+}
+
+table {
+  border: 2px solid;
+  height: 185px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  border-collapse: collapse;/*убирает двойную рамку*/
+}
+
+table tr:nth-child(2n-1) {
+  background-color: rgb(145, 214, 211);
+}
+
+td {
+  border: 2px solid rgb(87, 127, 202);
+  width: 250px;
+}
+
+th {
+  text-align: center;
+  height: 40px;
+  border: 2px solid rgb(87, 127, 202);
+}
